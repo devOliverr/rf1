@@ -145,8 +145,7 @@ export function ClaimForm() {
           <Link href="/about" className="text-gray-700 hover:text-gray-900">About</Link>
           <Link href="/how-it-works" className="text-gray-700 hover:text-gray-900">How it works</Link>
           <Link href="/why-refundee" className="text-gray-700 hover:text-gray-900">Why Refundee</Link>
-          <Link href="/articles" className="text-gray-700 hover:text-gray-900">Articles</Link>
-          <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
+           <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
         </div>
 
         <div className="flex items-center space-x-6">
@@ -194,8 +193,7 @@ export function ClaimForm() {
             <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">About</Link>
             <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-gray-900">How it works</Link>
             <Link href="/why-refundee" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why Refundee</Link>
-            <Link href="/articles" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Articles</Link>
-            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
+             <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
           </div>
           <div className="px-5 pt-4 pb-3 border-t border-gray-200">
             <div className="flex items-center space-x-4">

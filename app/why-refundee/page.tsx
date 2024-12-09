@@ -1,22 +1,51 @@
-"use client"
+'use client'
 
-import { useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Instagram, Facebook, Twitter, Youtube } from "lucide-react"
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { Instagram, Facebook, Twitter, Youtube, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import { ClaimForm } from "@/components/ui/claimForm"
 
-export function BlockPage() {
+export default function WhyRefundee() {
+  const [currentSlide, setCurrentSlide] = useState(0)
   const [showForm, setShowForm] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
-  if (showForm) {
-    return <ClaimForm />
-  }
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   
+    if (showForm) {
+      return <ClaimForm />
+    }
+  const slides = [
+    {
+      title: "We are fraud experts",
+      content: "Our team is made up of fraud experts who have worked at the Financial Conduct Authority, the Prudential Regulation Authority, the Financial Ombudsman Service, in banking and in tech. Leaving you in the best hands in the industry."
+    },
+    {
+      title: "No hassle or stress",
+      content: "We manage your case, writing all key arguments and fighting your case at the bank and the Financial Ombudsman service. Keeping you informed at every stage of the process to ensure you are empowered with the latest developments regarding your case."
+    },
+    {
+      title: "No win no fee",
+      content: "You only pay our fee if you recover money. We charge a simple, fair fee of between 15% to 25% + VAT. If we recover more than £66,666, we cap our fee at £10,000 + VAT. Ensuring your happiness throughout the process."
+    },
+    {
+      title: "Top-rated fraud recovery",
+      content: "We are the best rated fraud recovery company. Our client's appreciate what we do because we are transparent, supportive and we fight our hardest to get people's money back."
+    }
+  ]
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length)
+  }
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+  }
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -98,106 +127,75 @@ export function BlockPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20">
+      {/* Main Content */}
+      <main className="pt-32 pb-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="max-w-4xl mx-auto">
+            {/* Header Section */}
+            <div className="text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                Lost money<br />
-                to a scam?
+                Wondering<br />
+                why to use<br />
+                Refundee?
               </h1>
-              <p className="text-xl mb-6">
-                We've recovered over <span className="text-emerald-500 font-bold">£50 million</span><br />
-                for fraud victims in the UK
-              </p>
-              <Button 
-                className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-8 py-6"
-                onClick={() => setShowForm(true)}
-              >
-                Start your claim
-              </Button>
-              
-              <div className="grid grid-cols-2 gap-6 mt-12">
-                <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm">✓</span>
-                  </div>
-                  <span className="text-sm text-gray-600">FCA Regulated</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm">★</span>
-                  </div>
-                  <span className="text-sm text-gray-600">UK's best-rated</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm">£</span>
-                  </div>
-                  <span className="text-sm text-gray-600">£50m recovered</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm">👥</span>
-                  </div>
-                  <span className="text-sm text-gray-600">4,000+ customers</span>
-                </div>
+              <div className="space-y-4 text-lg text-gray-600">
+                <p>
+                  At Refundee, we understand the huge impact that losing money to fraud can have on victims.
+                </p>
+                <p>
+                  It's important that you are supported by an ethical company that charges fair fees, operates transparently, and supports you throughout the process.
+                </p>
               </div>
             </div>
+
+            {/* Carousel Section */}
             <div className="relative">
-              <Image
-                src="/images/hero.png"
-                alt="Fraud Recovery Illustration"
-                width={600}
-                height={500}
-                className="w-full"
-              />
+              <div className="overflow-hidden">
+                <div className="flex transition-transform duration-300 ease-in-out" 
+                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+                  {slides.map((slide, index) => (
+                    <div key={index} className="w-full flex-shrink-0">
+                      <Card className="bg-blue-50 border-none">
+                        <CardContent className="p-8">
+                          <h2 className="text-2xl font-bold mb-4">{slide.title}</h2>
+                          <p className="text-gray-600">{slide.content}</p>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Navigation Buttons */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg"
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg"
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+
+              {/* Dots */}
+              <div className="flex justify-center mt-6 space-x-2">
+                {slides.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      currentSlide === index ? 'bg-gray-800' : 'bg-gray-300'
+                    }`}
+                    onClick={() => setCurrentSlide(index)}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Trustpilot Section */}
-      <section className="bg-[#15232D] text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Rated <span className="text-emerald-500">Excellent</span><br />
-              on Trustpilot.
-            </h2>
-            <p className="text-lg text-gray-300">
-              We've helped over 4,000+ fraud victims already!
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-lg p-6 text-gray-900">
-                <div className="flex items-center mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <svg
-                      key={star}
-                      className="w-5 h-5 text-emerald-500"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                  <span className="ml-2 text-sm text-gray-600">Verified</span>
-                </div>
-                <p className="font-semibold mb-2">
-                  "I had a great experience working with Refundee..."
-                </p>
-                <p className="text-sm text-gray-600">
-                  Refundee helped me recover funds I thought were lost forever. Their team was professional and efficient throughout the entire process.
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      </main>
     </div>
   )
 }
