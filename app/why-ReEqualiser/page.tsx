@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ClaimForm } from "@/components/ui/claimForm"
 
-export default function WhyRefundee() {
+export default function WhyReEqualiser() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [showForm, setShowForm] = useState(false)
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -50,14 +50,14 @@ export default function WhyRefundee() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold">Refundee</span>
+              <span className="text-2xl font-bold">ReEqualiser</span>
             </Link>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/about" className="text-gray-700 hover:text-gray-900">About</Link>
               <Link href="/how-it-works" className="text-gray-700 hover:text-gray-900">How it works</Link>
-              <Link href="/why-refundee" className="text-gray-700 hover:text-gray-900">Why Refundee</Link>
+              <Link href="/why-ReEqualiser" className="text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
                 <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
             </div>
 
@@ -103,7 +103,7 @@ export default function WhyRefundee() {
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">About</Link>
                 <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-gray-900">How it works</Link>
-                <Link href="/why-refundee" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why Refundee</Link>
+                <Link href="/why-ReEqualiser" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
                     <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
               </div>
               <div className="px-5 pt-4 pb-3 border-t border-gray-200">
@@ -136,11 +136,11 @@ export default function WhyRefundee() {
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Wondering<br />
                 why to use<br />
-                Refundee?
+                ReEqualiser?
               </h1>
               <div className="space-y-4 text-lg text-gray-600">
                 <p>
-                  At Refundee, we understand the huge impact that losing money to fraud can have on victims.
+                  At ReEqualiser, we understand the huge impact that losing money to fraud can have on victims.
                 </p>
                 <p>
                   It's important that you are supported by an ethical company that charges fair fees, operates transparently, and supports you throughout the process.

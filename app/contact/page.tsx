@@ -21,14 +21,14 @@ export default function Contact() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold">Refundee</span>
+              <span className="text-2xl font-bold">ReEqualiser</span>
             </Link>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/about" className="text-gray-700 hover:text-gray-900">About</Link>
               <Link href="/how-it-works" className="text-gray-700 hover:text-gray-900">How it works</Link>
-              <Link href="/why-refundee" className="text-gray-700 hover:text-gray-900">Why Refundee</Link>
+              <Link href="/why-ReEqualiser" className="text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
                 <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
             </div>
 
@@ -74,7 +74,7 @@ export default function Contact() {
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">About</Link>
                 <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-gray-900">How it works</Link>
-                <Link href="/why-refundee" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why Refundee</Link>
+                <Link href="/why-ReEqualiser" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
                     <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
               </div>
               <div className="px-5 pt-4 pb-3 border-t border-gray-200">
@@ -111,8 +111,8 @@ export default function Contact() {
                 <div className="space-y-8">
                   <div>
                     <p className="text-gray-600 mb-2">Email us</p>
-                    <Link href="mailto:enquiries@refundee.com" className="text-xl font-semibold hover:underline">
-                      enquiries@refundee.com
+                    <Link href="mailto:enquiries@ReEqualiser.com" className="text-xl font-semibold hover:underline">
+                      enquiries@ReEqualiser.com
                     </Link>
                   </div>
                   
@@ -158,9 +158,9 @@ export default function Contact() {
       <footer className="bg-[#15232D] text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {/* Refundee Column */}
+            {/* ReEqualiser Column */}
             <div>
-              <h3 className="font-bold text-lg mb-4">Refundee</h3>
+              <h3 className="font-bold text-lg mb-4">ReEqualiser</h3>
               <ul className="space-y-2">
                 <li><Link href="/faqs" className="text-gray-300 hover:text-white">FAQs</Link></li>
                 <li><Link href="/our-fees" className="text-gray-300 hover:text-white">Our fees</Link></li>
@@ -195,9 +195,9 @@ export default function Contact() {
             <div>
               <h3 className="font-bold text-lg mb-4">Talk to us</h3>
               <ul className="space-y-2">
-                <li><Link href="/speak" className="text-gray-300 hover:text-white">Speak to Refundee</Link></li>
+                <li><Link href="/speak" className="text-gray-300 hover:text-white">Speak to ReEqualiser</Link></li>
                 <li><Link href="/complaints" className="text-gray-300 hover:text-white">Complaints procedure</Link></li>
-                <li><Link href="mailto:enquiries@refundee.com" className="text-gray-300 hover:text-white">enquiries@refundee.com</Link></li>
+                <li><Link href="mailto:enquiries@ReEqualiser.com" className="text-gray-300 hover:text-white">enquiries@ReEqualiser.com</Link></li>
                 <li><Link href="tel:+442045254600" className="text-gray-300 hover:text-white">+44 (0) 20 4525 4600</Link></li>
               </ul>
             </div>

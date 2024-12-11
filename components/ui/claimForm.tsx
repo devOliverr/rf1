@@ -137,14 +137,14 @@ export function ClaimForm() {
     <div className="container mx-auto px-4 py-4">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center"  onClick={() => window.location.reload()}>
-          <span className="text-2xl font-bold">Refundee</span>
+          <span className="text-2xl font-bold">ReEqualiser</span>
         </Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <Link href="/about" className="text-gray-700 hover:text-gray-900">About</Link>
           <Link href="/how-it-works" className="text-gray-700 hover:text-gray-900">How it works</Link>
-          <Link href="/why-refundee" className="text-gray-700 hover:text-gray-900">Why Refundee</Link>
+          <Link href="/why-ReEqualiser" className="text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
            <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
         </div>
 
@@ -192,7 +192,7 @@ export function ClaimForm() {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">About</Link>
             <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-gray-900">How it works</Link>
-            <Link href="/why-refundee" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why Refundee</Link>
+            <Link href="/why-ReEqualiser" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
              <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
           </div>
           <div className="px-5 pt-4 pb-3 border-t border-gray-200">

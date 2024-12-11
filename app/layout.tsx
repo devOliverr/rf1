@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Refundee",
+  title: "ReEqualiser",
   description: "Start your claim today",
 };
 

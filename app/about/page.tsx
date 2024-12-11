@@ -20,14 +20,14 @@ export default function AboutUs() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold">Refundee</span>
+              <span className="text-2xl font-bold">ReEqualiser</span>
             </Link>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <Link href="/about" className="text-gray-700 hover:text-gray-900">About</Link>
               <Link href="/how-it-works" className="text-gray-700 hover:text-gray-900">How it works</Link>
-              <Link href="/why-refundee" className="text-gray-700 hover:text-gray-900">Why Refundee</Link>
+              <Link href="/why-ReEqualiser" className="text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
                 <Link href="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
             </div>
 
@@ -73,7 +73,7 @@ export default function AboutUs() {
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">About</Link>
                 <Link href="/how-it-works" className="block px-3 py-2 text-gray-700 hover:text-gray-900">How it works</Link>
-                <Link href="/why-refundee" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why Refundee</Link>
+                <Link href="/why-ReEqualiser" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Why ReEqualiser</Link>
                     <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</Link>
               </div>
               <div className="px-5 pt-4 pb-3 border-t border-gray-200">
@@ -104,11 +104,11 @@ export default function AboutUs() {
             {/* Header Section */}
             <div className="text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-                About Refundee
+                About ReEqualiser
               </h1>
               <p className="text-xl text-gray-600">
                 Founded with a clear sense of purpose. You will only work with experts<br />
-                when you deal with Refundee.
+                when you deal with ReEqualiser.
               </p>
             </div>
 
@@ -144,16 +144,13 @@ export default function AboutUs() {
                 back for good
               </h3>
               <p className="text-xl text-gray-600">
-              Here’s our story:
+              At ReEqualiser, we are dedicated to helping individuals recover funds lost to scams, ensuring justice and financial stability for our clients. Our mission is to empower victims of fraudulent activities by providing professional recovery services that deliver results with integrity, efficiency, and transparency.
 
-Co-founder, Stuart McFadden, is an expert in banks regulatory obligations to protect their customers from fraud and scams. He has regularly featured as an expert giving talks at industry events, recently featured as a fraud expert on the Watchdog segment of the BBC’s One Show, BBC’s Rip Off Britain and has given evidence to MP’s at All Parliamentary Party Groups. 
+With a team of experienced professionals and advanced tools, we specialize in tracing and recovering misappropriated assets. Leveraging cutting-edge blockchain analysis, forensic methodologies, and legal expertise, we navigate the complexities of financial fraud to achieve successful outcomes for our clients.
 
-He has previously held numerous senior leadership positions in Financial Services and has worked at the Financial Conduct Authority, the Financial Ombudsman Service, Natwest and at technology companies Monzo and Ophelos. 
+ReEqualiser stands as a trusted partner in the fight against fraud, offering personalized solutions tailored to each unique case. We pride ourselves on maintaining the highest standards of professionalism and discretion, ensuring that your case is handled with care and precision.
 
-Co-founder, William Ayles, has a background in financial services started in multi asset investment analysis before moving to Monzo Bank. His specialism in Operations meant that he’s worked across a number of different areas including Lending, Vulnerable Customer, and Financial Difficulties. He then led the Business Banking Operations at Monzo.
-
-Having seen how many banks were failing to support victims of scams, he set up Refundee in 2021 to help victims when they need it most.
-
+Let us be your ally in reclaiming what is rightfully yours. At ReEqualiser, we are committed to restoring balance and trust.
   </p>
             </div>
           </div>
