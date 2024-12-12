@@ -4,6 +4,8 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Instagram, Facebook, Twitter, Youtube } from "lucide-react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { Button } from "@/components/ui/button"
 import { ClaimForm } from "@/components/ui/claimForm"
 
@@ -35,11 +37,11 @@ export function BlockPage() {
             <div className="flex items-center space-x-6">
               {/* Desktop Social Icons */}
               <div className="hidden md:flex items-center space-x-4">
-                <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
-                <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                  <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
                 <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                   <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
@@ -79,11 +81,11 @@ export function BlockPage() {
               </div>
               <div className="px-5 pt-4 pb-3 border-t border-gray-200">
                 <div className="flex items-center space-x-4">
-                  <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                  <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                   </Link>
-                  <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                    <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                  <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                   </Link>
                   <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                     <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
@@ -108,8 +110,8 @@ export function BlockPage() {
                 to a scam?
               </h1>
               <p className="text-xl mb-6">
-                We've recovered over <span className="text-emerald-500 font-bold">£50 million</span><br />
-                for fraud victims in the UK
+                We've recovered over <span className="text-emerald-500 font-bold">$50 million</span><br />
+                for fraud victims in the US
               </p>
               <Button 
                 className="bg-emerald-500 hover:bg-emerald-600 text-white text-lg px-8 py-6"
@@ -133,9 +135,9 @@ export function BlockPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
-                    <span className="text-sm">£</span>
+                    <span className="text-sm">$</span>
                   </div>
-                  <span className="text-sm text-gray-600">£50m recovered</span>
+                  <span className="text-sm text-gray-600">$50m recovered</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">

@@ -3,7 +3,9 @@
 import { useState } from "react"
 import Link from 'next/link'
 import Image from 'next/image'
-import { Instagram, Facebook, Twitter, Youtube } from 'lucide-react'
+import { Instagram, Facebook, Twitter, Youtube } from "lucide-react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { Button } from "@/components/ui/button"
 import { ClaimForm } from "@/components/ui/claimForm"
 
@@ -35,12 +37,13 @@ export default function Contact() {
             <div className="flex items-center space-x-6">
               {/* Desktop Social Icons */}
               <div className="hidden md:flex items-center space-x-4">
-                <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
-                <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                  <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
+                
                 <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                   <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
@@ -79,11 +82,11 @@ export default function Contact() {
               </div>
               <div className="px-5 pt-4 pb-3 border-t border-gray-200">
                 <div className="flex items-center space-x-4">
-                  <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                 <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                   </Link>
-                  <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                    <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                  <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                   </Link>
                   <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                     <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
@@ -116,20 +119,15 @@ export default function Contact() {
                     </Link>
                   </div>
                   
-                  <div>
-                    <p className="text-gray-600 mb-2">Call us</p>
-                    <Link href="tel:+442045254600" className="text-xl font-semibold hover:underline">
-                      +44 (0) 20 4525 4600
-                    </Link>
-                  </div>
+                 
 
                   <div className="flex space-x-4 pt-4">
-                    <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                      <Instagram className="w-6 h-6 text-gray-600 hover:text-gray-900" />
-                    </Link>
-                    <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                      <Facebook className="w-6 h-6 text-gray-600 hover:text-gray-900" />
-                    </Link>
+                  <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                  </Link>
+                  <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                  </Link>
                     <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                       <Twitter className="w-6 h-6 text-gray-600 hover:text-gray-900" />
                     </Link>

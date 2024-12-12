@@ -247,7 +247,7 @@ export function ClaimForm() {
 
             {step === 1 && (
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold">Did you lose over £10,000 as a result of a scam?</h2>
+                <h2 className="text-3xl font-bold">Did you lose over $10,000 as a result of a scam?</h2>
                 <RadioGroup
                   value={formData.isOver10k}
                   onValueChange={(value: string) => {
@@ -281,7 +281,7 @@ export function ClaimForm() {
 
             {step === 2 && (
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold">How much money did you lose in GBP (£)?</h2>
+                <h2 className="text-3xl font-bold">How much money did you lose in GBP ($)?</h2>
                 <Input
                   type="number"
                   value={formData.amountLost || ''}
@@ -337,7 +337,7 @@ export function ClaimForm() {
 
             {step === 4 && (
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold">Was a UK bank involved?</h2>
+                <h2 className="text-3xl font-bold">Was a US bank involved?</h2>
                 <RadioGroup
                   value={formData.ukBankInvolved}
                   onValueChange={(value: string) => setFormData({ ...formData, ukBankInvolved: value })}
@@ -530,7 +530,7 @@ export function ClaimForm() {
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-red-600">Not Eligible</h2>
                 <p className="text-lg">
-                  Unfortunately, we can only help with claims over £10,000. 
+                  Unfortunately, we can only help with claims over $10,000. 
                   We recommend contacting Action Fraud or your bank directly for assistance.
                 </p>
                 <Button 

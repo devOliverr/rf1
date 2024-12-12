@@ -3,7 +3,9 @@
 import { useState } from "react"
 import Link from 'next/link'
 import Image from 'next/image'
-import { Instagram, Facebook, Twitter, Youtube } from 'lucide-react'
+import { Instagram, Facebook, Twitter, Youtube } from "lucide-react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { Button } from "@/components/ui/button"
 import { ClaimForm } from "@/components/ui/claimForm"
 
@@ -36,12 +38,13 @@ export default function HowItWorks() {
             <div className="flex items-center space-x-6">
               {/* Desktop Social Icons */}
               <div className="hidden md:flex items-center space-x-4">
-                <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
-                <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                  <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
+                
                 <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                   <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                 </Link>
@@ -80,11 +83,11 @@ export default function HowItWorks() {
               </div>
               <div className="px-5 pt-4 pb-3 border-t border-gray-200">
                 <div className="flex items-center space-x-4">
-                  <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                    <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                 <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                   </Link>
-                  <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                    <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                  <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
                   </Link>
                   <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                     <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
@@ -110,7 +113,8 @@ export default function HowItWorks() {
                 process works
               </h1>
               <p className="text-xl text-gray-600">
-                We could help you get your money back in just 3 simple stages.
+                
+At ReEqualiser, we’ve streamlined the process of recovering your lost funds into four simple steps. Our transparent approach ensures that you are informed and supported every step of the way.
               </p>
             </div>
 
@@ -119,9 +123,12 @@ export default function HowItWorks() {
               {/* Step 1 */}
               <div className="bg-blue-50 rounded-lg p-6">
                
-                <h2 className="text-xl font-bold mb-4">1. The investigation</h2>
+                <h2 className="text-xl font-bold mb-4">1.  Submit Your Case</h2>
                 <p className="text-gray-600">
-                  Our fraud investigators will assess your case to see if we can help. We'll let you know whether we can help.
+                Contact Us: Begin by filling out our secure online form with details of the scam or fraudulent activity. Provide as much information as possible, including transaction records, communication logs, and other relevant evidence.
+                </p>
+                <p className="text-gray-600">
+                Free Consultation: Once submitted, our experts will review your case and arrange a consultation to assess its viability and discuss potential recovery strategies.
                 </p>
               </div>
 
@@ -130,17 +137,18 @@ export default function HowItWorks() {
                 
                 <h2 className="text-xl font-bold mb-4">2. The bank</h2>
                 <p className="text-gray-600">
-                  ReEqualiser will prepare your individual case and submit a bespoke report to the bank in order to receive their formal response.
+                Custom Solutions: Based on our findings, we design a tailored recovery plan that aligns with your unique situation.
+                Collaboration with Authorities: When necessary, we collaborate with legal teams, financial institutions, and law enforcement to strengthen your case.
                 </p>
               </div>
 
               {/* Step 3 */}
               <div className="bg-blue-50 rounded-lg p-6">
                
-                <h2 className="text-xl font-bold mb-4">3. The Financial Ombudsman Service</h2>
+                <h2 className="text-xl font-bold mb-4">3.  Fund Recovery</h2>
                 <p className="text-gray-600">
-                  If needed, ReEqualiser submits a bespoke report and works with the FOS investigators. If you are unsuccessful, you won't have to pay a penny.
-                </p>
+                Reclaiming Funds: Once located, we initiate the process to recover your assets using the appropriate legal and technical methods.
+                Transparent Updates: Throughout the recovery process, we keep you informed with regular updates on our progress.              </p>
               </div>
             </div>
 
