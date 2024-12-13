@@ -118,6 +118,12 @@ export default function Contact() {
                       enquiries@ReEqualiser.com
                     </Link>
                   </div>
+                  <div>
+                    <p className="text-gray-600 mb-2">Contact us</p>
+                    <Link href="tel:+15342284862" className="text-xl font-semibold hover:underline">
+                    +1 (534) 228‑4862
+                    </Link>
+                  </div>
                   
                  
 
@@ -196,7 +202,7 @@ export default function Contact() {
                 <li><Link href="/speak" className="text-gray-300 hover:text-white">Speak to ReEqualiser</Link></li>
                 <li><Link href="/complaints" className="text-gray-300 hover:text-white">Complaints procedure</Link></li>
                 <li><Link href="mailto:enquiries@ReEqualiser.com" className="text-gray-300 hover:text-white">enquiries@ReEqualiser.com</Link></li>
-                <li><Link href="tel:+442045254600" className="text-gray-300 hover:text-white">+44 (0) 20 4525 4600</Link></li>
+                <li><Link href="tel:+15342284862" className="text-gray-300 hover:text-white">+1 (534) 228‑4862</Link></li>
               </ul>
             </div>
           </div>

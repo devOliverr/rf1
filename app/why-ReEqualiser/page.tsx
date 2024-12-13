@@ -29,7 +29,7 @@ export default function WhyReEqualiser() {
     },
     {
       title: "A very low initial fee",
-      content: "You pay an initial fee of 5%. We charge a simple, fair fee of between 15% to 25% + VAT. If we recover more than $66,666, we cap our fee at $10,000 + VAT. Ensuring your happiness throughout the process."
+      content: "You pay an initial fee of 5%. We charge a simple, fair fee of between 10% + VAT. If we recover more than $66,666, we cap our fee at $10,000 + VAT. Ensuring your happiness throughout the process."
     },
     {
       title: "Top-rated fraud recovery",
