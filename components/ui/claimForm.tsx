@@ -7,7 +7,8 @@ import { Calendar } from "@/components/ui/calendar";
 import { format } from "date-fns";
 import Link from "next/link";
 import { Instagram, Facebook, Twitter, Youtube } from "lucide-react"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
 import {
   Box,
@@ -151,13 +152,14 @@ export function ClaimForm() {
         <div className="flex items-center space-x-6">
           {/* Desktop Social Icons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
-            </Link>
-            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
-            </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                </Link>
+                <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                </Link>
+                
+                <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
             </Link>
             <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
@@ -197,13 +199,13 @@ export function ClaimForm() {
           </div>
           <div className="px-5 pt-4 pb-3 border-t border-gray-200">
             <div className="flex items-center space-x-4">
-              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <Instagram className="w-5 h-5 text-gray-600 hover:text-gray-900" />
-              </Link>
-              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <Facebook className="w-5 h-5 text-gray-600 hover:text-gray-900" />
-              </Link>
-              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <Link href="https://wa.me/15342284862" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                </Link>
+                <Link href="https://t.me/Reequaliser" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTelegram} className="w-5 h-5 text-gray-600 hover:text-gray-900" />
+                </Link>
+                   <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <Twitter className="w-5 h-5 text-gray-600 hover:text-gray-900" />
               </Link>
               <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
@@ -281,12 +283,12 @@ export function ClaimForm() {
 
             {step === 2 && (
               <div className="space-y-6">
-                <h2 className="text-3xl font-bold">How much money did you lose in GBP ($)?</h2>
+                <h2 className="text-3xl font-bold">How much money did you lose in usd ($)?</h2>
                 <Input
                   type="number"
                   value={formData.amountLost || ''}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, amountLost: parseFloat(e.target.value) })}
-                  placeholder="Enter amount in GBP"
+                  placeholder="Enter amount in usd"
                   className="text-lg"
                 />
                 <div className="flex justify-end">
@@ -335,7 +337,7 @@ export function ClaimForm() {
               </div>
             )}
 
-            {step === 4 && (
+            {/* {step === 4 && (
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold">Was a US bank involved?</h2>
                 <RadioGroup
@@ -398,9 +400,9 @@ export function ClaimForm() {
                   </Button>
                 </div>
               </div>
-            )}
-
-            {step === 6 && (
+            )} */}
+{/* 
+            {step === 4 && (
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold">Which bank did you use?</h2>
                 <Input
@@ -419,9 +421,9 @@ export function ClaimForm() {
                   </Button>
                 </div>
               </div>
-            )}
+            )} */}
 
-            {step === 7 && (
+            {step === 4 && (
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold">Tell us what happened</h2>
                 <textarea
@@ -441,13 +443,13 @@ export function ClaimForm() {
               </div>
             )}
 
-            {step === 8 && (
+            {step === 5 && (
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold">When did this happen?</h2>
                 <Calendar
                   selectedDate={date}
                   onDateChange={setDate}
-                  minDate={new Date()} // Disable past dates
+                  maxDate={new Date()} // Disable past dates
                   disabledDates={[new Date('2024-03-25')]} // Disable specific dates
                 />
                 <div className="flex justify-end">
@@ -456,7 +458,7 @@ export function ClaimForm() {
               </div>
             )}
 
-            {step === 9 && (
+            {step === 6 && (
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold">How did you hear about us?</h2>
                 <RadioGroup
@@ -486,7 +488,7 @@ export function ClaimForm() {
               </div>
             )}
 
-            {step === 10 && (
+            {step === 7 && (
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold">Your Details</h2>
                 <div className="space-y-4">
@@ -542,7 +544,7 @@ export function ClaimForm() {
               </div>
             )}
 
-            {step === 11 && (
+            {step === 8 && (
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-green-600">Thank You</h2>
                 <p className="text-lg">

@@ -114,7 +114,7 @@ export default function HowItWorks() {
               </h1>
               <p className="text-xl text-gray-600">
                 
-At ReEqualiser, we’ve streamlined the process of recovering your lost funds into four simple steps. Our transparent approach ensures that you are informed and supported every step of the way.
+              At ReEqualiser, we’ve streamlined the process of recovering your lost funds into four simple steps. Our transparent approach ensures that you are informed and supported every step of the way.
               </p>
             </div>
 
@@ -135,22 +135,39 @@ At ReEqualiser, we’ve streamlined the process of recovering your lost funds in
               {/* Step 2 */}
               <div className="bg-blue-50 rounded-lg p-6">
                 
-                <h2 className="text-xl font-bold mb-4">2. The bank</h2>
+                <h2 className="text-xl font-bold mb-4">2. Investigation and Analysis</h2>
                 <p className="text-gray-600">
-                Custom Solutions: Based on our findings, we design a tailored recovery plan that aligns with your unique situation.
-                Collaboration with Authorities: When necessary, we collaborate with legal teams, financial institutions, and law enforcement to strengthen your case.
+                Tracing Assets: Our team of specialists uses advanced tools, including blockchain analysis, forensic accounting, and digital tracking, to locate and trace your funds.
                 </p>
+                <p className="text-gray-600">
+                  Fraud Assessment: We analyze the scam structure to understand how the fraud occurred and identify the responsible parties.
+  </p>
               </div>
 
               {/* Step 3 */}
               <div className="bg-blue-50 rounded-lg p-6">
                
-                <h2 className="text-xl font-bold mb-4">3.  Fund Recovery</h2>
+                <h2 className="text-xl font-bold mb-4">3.  Recovery strategy</h2>
                 <p className="text-gray-600">
-                Reclaiming Funds: Once located, we initiate the process to recover your assets using the appropriate legal and technical methods.
-                Transparent Updates: Throughout the recovery process, we keep you informed with regular updates on our progress.              </p>
+                Custom Solutions: Based on our findings, we design a tailored recovery plan that aligns with your unique situation.
+                </p>
+                <p className="text-gray-600">
+                  Collaboration with Authorities: When necessary, we collaborate with legal teams, financial institutions, and law enforcement to strengthen your case.   </p>
               </div>
             </div>
+
+             {/* Step 4 */}
+             <div className="bg-blue-50 rounded-lg p-6">
+               
+               <h2 className="text-xl font-bold mb-4">3.  Fund Recovery</h2>
+               <p className="text-gray-600">
+               Reclaiming Funds: Once located, we initiate the process to recover your assets using the appropriate legal and technical methods.
+               </p>
+               <p className="text-gray-600">
+                Transparent Updates: Throughout the recovery process, we keep you informed with regular updates on our progress.
+     </p>
+             </div>
+           </div>
 
             {/* Success Message */}
             <div className="text-center text-gray-600 max-w-3xl mx-auto">
@@ -159,7 +176,9 @@ At ReEqualiser, we’ve streamlined the process of recovering your lost funds in
               </p>
             </div>
           </div>
+          <div>
         </div>
+      
       </main>
     </div>
   )

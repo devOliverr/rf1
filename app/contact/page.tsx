@@ -163,7 +163,7 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* ReEqualiser Column */}
-            <div>
+            {/* <div>
               <h3 className="font-bold text-lg mb-4">ReEqualiser</h3>
               <ul className="space-y-2">
                 <li><Link href="/faqs" className="text-gray-300 hover:text-white">FAQs</Link></li>
@@ -171,10 +171,10 @@ export default function Contact() {
                 <li><Link href="/app-scams" className="text-gray-300 hover:text-white">APP Scams</Link></li>
                 <li><Link href="/blog" className="text-gray-300 hover:text-white">Blog</Link></li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Banks Column */}
-            <div>
+            {/* <div>
               <h3 className="font-bold text-lg mb-4">Banks</h3>
               <ul className="space-y-2">
                 <li><Link href="/bank-transfers" className="text-gray-300 hover:text-white">Bank transfers</Link></li>
@@ -182,7 +182,7 @@ export default function Contact() {
                 <li><Link href="/revolut" className="text-gray-300 hover:text-white">Revolut</Link></li>
                 <li><Link href="/hsbc" className="text-gray-300 hover:text-white">HSBC</Link></li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Support Column */}
             <div>
@@ -196,7 +196,7 @@ export default function Contact() {
             </div>
 
             {/* Talk to us Column */}
-            <div>
+            {/* <div>
               <h3 className="font-bold text-lg mb-4">Talk to us</h3>
               <ul className="space-y-2">
                 <li><Link href="/speak" className="text-gray-300 hover:text-white">Speak to ReEqualiser</Link></li>
@@ -204,7 +204,7 @@ export default function Contact() {
                 <li><Link href="mailto:enquiries@ReEqualiser.com" className="text-gray-300 hover:text-white">enquiries@ReEqualiser.com</Link></li>
                 <li><Link href="tel:+15342284862" className="text-gray-300 hover:text-white">+1 (534) 228‑4862</Link></li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
