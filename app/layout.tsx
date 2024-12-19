@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "ReEqualiser",
-  description: "Start your claim today",
+  description: "Fraud recovery experts",
 };
 
 export default function RootLayout({

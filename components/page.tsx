@@ -131,7 +131,7 @@ export function BlockPage() {
                   <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">
                     <span className="text-sm">★</span>
                   </div>
-                  <span className="text-sm text-gray-600">UK's best-rated</span>
+                  <span className="text-sm text-gray-600">US best-rated</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-6 h-6 bg-gray-100 rounded-full flex items-center justify-center">

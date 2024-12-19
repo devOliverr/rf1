@@ -159,7 +159,7 @@ export default function HowItWorks() {
              {/* Step 4 */}
              <div className="bg-blue-50 rounded-lg p-6">
                
-               <h2 className="text-xl font-bold mb-4">3.  Fund Recovery</h2>
+               <h2 className="text-xl font-bold mb-4">4.  Fund Recovery</h2>
                <p className="text-gray-600">
                Reclaiming Funds: Once located, we initiate the process to recover your assets using the appropriate legal and technical methods.
                </p>

@@ -116,7 +116,7 @@ export default function AboutUs() {
             </div>
 
             {/* Team Photos */}
-            <div className="grid md:grid-cols-2 gap-8 mb-20">
+            {/* <div className="grid md:grid-cols-2 gap-8 mb-20">
               <div className="aspect-[4/3] relative rounded-lg overflow-hidden">
                 <Image
                   src="/images/Stuart+McFadden.jpg"
@@ -135,7 +135,7 @@ export default function AboutUs() {
                   className="object-cover"
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* Mission Section */}
             <div className="text-center">
